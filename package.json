@@ -1,14 +1,19 @@
-{
-  "name": "static-site",
+{   "name": "readme_generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create a professional readme that is generated using Node.js",
   "main": "index.js",
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Elaine Luckey",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "8.2.4"
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "Generates a professional README."
   }
 }
