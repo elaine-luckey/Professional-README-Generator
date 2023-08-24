@@ -110,7 +110,13 @@ const promptQuestions = () => {
             type: 'confirm',
             name: 'collab',
             message: 'Will your project have a collaborator?',
-            default: true
+            validate: collaboratorInput => {
+                if(collaboratorInput){
+                    return true;
+                } else {
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
@@ -164,10 +170,10 @@ const promptQuestions = () => {
         .then(Markdown => {
             return writeFile(Markdown);
         })
-        .then(writeFileResponse => {
-            console.log(writeFileResponse);
-            return copyFile();
-        })
+        // .then(writeFileResponse => {
+        //     console.log(writeFileResponse);
+        //     return copyFile();
+        // })
         .then(copyFileResponse => {
             console.log(copyFileResponse);
         })
