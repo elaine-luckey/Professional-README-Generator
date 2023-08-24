@@ -1,23 +1,37 @@
-const fs = require('fs');
+const check = require('./checkMarkdown')
 
-const writeFile = fileContent => {
-    return new Promise((resolve, reject) => {
-        fs.writeFile('./dist/README.md', fileContent, err => {
-            // if there's an error, reject the Promise and send the error to the .catch()
-            if (err) {
-                reject(err); 
-                // return out of the function here to make sure the Promise doesn't execute the resolve() function
-                return;
-            }
+// Create a README.md template using JavaScript
+const createMarkdown = (data) => {
+  return (
+`# ${data.title} • ${check.createBadge(data.license)}
 
-            // if everything went well, resolve Promise
-            resolve({
-                ok: true,
-                message: 'Congratulations your READMe file has been created!'
-            });
-        });
-    });
-};
+## Description
+${data.description}
 
+## Table of Contents
+${check.checkInstall(data.installInput)}
+${check.checkUsage(data.usage)}
+${check.checkContribute(data.contribute)}
+${check.checkTesting(data.test)}
+* [License](#license)
+* [Questions](#questions)
+  
+${check.createInstall(data.installInput)}
 
-module.exports = { writeFile };
+${check.createUsage(data.usage)}
+
+${check.createContribute(data.contribute)}
+
+${check.createTesting(data.test)}
+
+## License
+This application is covered under the ${data.license} license.
+
+## Questions
+Check out my Github page: [${data.username}](https://www.github.com/${data.username})
+
+If you have any other questions, please feel free to contact me at: [${data.email}](mailto:${data.email})`
+  )
+}
+
+module.exports = createMarkdown

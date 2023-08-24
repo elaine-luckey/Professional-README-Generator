@@ -1,36 +1,32 @@
+# README Generator • [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  # undefined
+## Description
+To create a README file via the terminal
 
-  ## Table of Contents
-  - [Description](#project-description)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contribution](#contribution)
-  - [Testing](#testing)
-  - [Questions](#questions)
-
-
-  ## Project Description
-  undefined
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributions](#contributions)
+* [Testing](#testing)
+* [License](#license)
+* [Questions](#questions)
   
-  ### Licensing 
-  undefined
-  
-   
-  
+## Installation
+node.js
 
-  ## Installation 
-  undefined
+## Usage
+To create a README via the terminal
 
-  ## Usage 
-  undefined
+## Contributions
+Ask to join the repo and code away
 
-  ## Contribution
-  undefined
+## Testing
+Use Mocha and chai
 
-  ## Testing
-  undefined
+## License
+This application is covered under the MIT license.
 
-  ## Questions
-  Reach out to the repo owner, [elaine-luckey](https://github.com/elaine-luckey) at undefined.
-  
+## Questions
+Check out my Github page: [elaine-luckey](https://www.github.com/elaine-luckey)
+
+If you have any other questions, please feel free to contact me at: [emarieluckey@yahoo.com](mailto:emarieluckey@yahoo.com)
