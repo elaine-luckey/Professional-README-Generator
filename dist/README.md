@@ -1,7 +1,7 @@
 # README Generator • [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-To create a README file via the terminal
+This project is to create a README.md file via the terminal
 
 ## Table of Contents
 * [Installation](#installation)
@@ -12,16 +12,16 @@ To create a README file via the terminal
 * [Questions](#questions)
   
 ## Installation
-node.js
+Node.js
 
 ## Usage
-To create a README via the terminal
+To create README.md files through the terminal
 
 ## Contributions
-Ask to join the repo and code away
+Anyone can join, request access and code away!
 
 ## Testing
-Use Mocha and chai
+Use mocha and chai
 
 ## License
 This application is covered under the MIT license.
